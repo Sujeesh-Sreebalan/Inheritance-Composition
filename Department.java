@@ -27,7 +27,7 @@ class Department {
 	 * @param emp Developer object which contains details of employee
 	 * @return true if add in list else false if already present
 	 */
-	boolean join(Developer emp) {
+	public boolean join(Developer emp) {
 		if(employees.contains(emp)) {
 			return false;
 		}
@@ -39,7 +39,7 @@ class Department {
 	 * @param emp Developer object which needs to be relieve 
 	 * @return true if employee present in list else return false
 	 */
-	boolean relieve(Developer emp) {
+	public boolean relieve(Developer emp) {
 		if(employees.contains(emp)) {
 			return employees.remove(emp);
 		}
